@@ -1,6 +1,6 @@
 # WNFC
 
-This is a Tamper Monkey script that will automatically run when you search for a Southwest Points far. 
+This is a Tamper Monkey script that will automatically run when you search for a Southwest Points fare. It displays the Base Fare, Number of points per dollar required, as well as the paid fare class. The output is ugly, but I'm going to clean that up.
 
 It requires [Tamper Monkey](https://tampermonkey.net/) to be installed first.
 
