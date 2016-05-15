@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Southwest Fare Class and Price Per Dollar Calculator
 // @namespace    http://chrisnolan.org
-// @version      0.3
+// @version      0.31
 // @description  Display base price, fare class, and points per dollar required
 // @author       Chris Nolan
 // @require      http://code.jquery.com/jquery-latest.js
