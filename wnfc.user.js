@@ -12,6 +12,8 @@
 
 (function() {
 
+// Dictionary of fare classes and the known values for PPD. I'd like to highlight or alert somehow if the actual PPD does not match this. 
+// Not used yet.
 var fare_classes = {
     {'T':72},
     {'N':72},
@@ -27,18 +29,27 @@ var fare_classes = {
     {'YL':100},
     {'K':120}};
 
-    $('[class*=boundRadio]').each(function() {
-        var re = /(\d+\.*\d*)\@(\w)\@.*@/;
+    // Each pricing radio button has the full flight pricing information in an HTML class.
+    // This will loop through every flight and fare type on the inbound and outbound grids.
+    $('[class*=boundRadio]').each(function() { 
+        var re = /(\d+\.*\d*)\@(\w)\@.*@/; // This regular expression will pull out the base fare and fare class
         var m,points,ppd;
-        if ((m = re.exec($(this).val())) !== null) {
+        if ((m = re.exec($(this).val())) !== null) { // This saves the BF and FC for use later. There is probably a better way to do this.
             if (m.index === re.lastIndex) {
                 re.lastIndex++;
             }
         };
-        //debugger;
+        //debugger; // Use this to break and allow debugging.
+        
+        // This is an awkward way to find the points required for a flight.
+        // Since we need to make sure we stay in the same column, we can't just blindly search again.
+        // So, starting from the radio button above, we go to it's parent, and then to the next element in the DOM. 
+        // This should be the "discount points" element. 
+        // There's a bunch of white space in the text, so I assume there is a cleanear way to get the point's required.
+        // But for now, just strip out the white space and commas. Then convert to integer.
         points = parseInt($(this).parent().next().text().trim().replace(/,/g, ''),10);
-        ppd = (points/(parseInt(m[1],10))).toFixed();
-        bf = $('<span> (BF:$'+m[1]+') (PPD:'+ppd+') (FC:'+m[2]+') </span>\n').insertAfter($(this));
+        ppd = (points/(parseInt(m[1],10))).toFixed(); // Divide points required by the base fare (m[1]). Round to nearest whole number.
+        bf = $('<span> (BF:$'+m[1]+') (PPD:'+ppd+') (FC:'+m[2]+') </span>\n').insertAfter($(this)); // Print the results after the Radio Button.
     }
                                  );
 })();
