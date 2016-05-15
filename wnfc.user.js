@@ -13,26 +13,26 @@
 (function() {
 
 /*
-T = 72 pts / $ 70 pts /$ ($52.93/3705)
-N = 72 pts / $ 70 pts /$ ($77.12/5398)
-M = 72 pts / $ 70 pts /$ ($147.35/10315) 
-S = 72 pts / $ 70 pts / $ ($93.86/6570)
-O = 72 pts / $ 70 pts / $ ($180.84/12659) 
+T = 72 pts
+N = 72 pts
+M = 72 pts
+S = 72 pts
+O = 72 pts
 ————
-R = 74 pts / $ ($219.92/16273) 
+R = 74 pts
 ————
-W = 76 pts / $ ($241.30/18339) 
-H = 76 pts / $ ($275.72/20955)
+W = 76 pts
+H = 76 pts
 ————
-Q = 78 pts / $ ($238.98/18640)
-B = 78 pts / $ ($276.19/21543)
+Q = 78 pts
+B = 78 pts
 ————
-L = 80 pts / $ ($331.05/26484)
+L = 80 pts
 ————
 AT Fare Classes = Applicable Ratio
-YL = 100 pts /$ ($242.70/24270)
+YL = 100 pts
 BS Fare Classes = Applicable Ratio
-K = 120 pts/ $ ($458.41/55021)
+K = 120 pts
 
 */
 
