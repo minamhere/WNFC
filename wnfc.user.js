@@ -12,29 +12,19 @@
 
 (function() {
 
-/*
-T = 72 pts
-N = 72 pts
-M = 72 pts
-S = 72 pts
-O = 72 pts
-————
-R = 74 pts
-————
-W = 76 pts
-H = 76 pts
-————
-Q = 78 pts
-B = 78 pts
-————
-L = 80 pts
-————
-AT Fare Classes = Applicable Ratio
-YL = 100 pts
-BS Fare Classes = Applicable Ratio
-K = 120 pts
-
-*/
+var fc_T = 72;
+var fc_N = 72;
+var fc_M = 72;
+var fc_S = 72;
+var fc_O = 72;
+var fc_R = 74;
+var fc_W = 76;
+var fc_H = 76;
+var fc_Q = 78;
+var fc_B = 78;
+var fc_L = 80;
+var fc_YL = 100;
+var fc_K = 120;
 
     $('[class*=boundRadio]').each(function() {
         var re = /(\d+\.*\d*)\@(\w)\@.*@/;
