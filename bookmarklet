@@ -1,5 +1,0 @@
-javascript: (function () { 
-    var jsCode = document.createElement('script'); 
-    jsCode.setAttribute('src', 'https://github.com/minamhere/WNFC/blob/master/wnfc.js');                  
-  document.body.appendChild(jsCode); 
- }());
