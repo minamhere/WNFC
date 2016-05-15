@@ -6,6 +6,7 @@
 // @author       Chris Nolan
 // @require      http://code.jquery.com/jquery-latest.js
 // @match        https://www.southwest.com/*
+// @updateURL    https://github.com/minamhere/WNFC/blob/master/wnfc.user.js
 // @grant        none
 // ==/UserScript==
 
