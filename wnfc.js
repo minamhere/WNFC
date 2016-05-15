@@ -1,1 +1,0 @@
-javascript: $('[class*=boundRadio]').each(function() {var re = /(\d+\.*\d*)\@(\w)\@.*@/; var m;if ((m = re.exec($(this).val())) !== null) {if (m.index === re.lastIndex) {re.lastIndex++;}};bf = $('<span> (BF:$'+m[1]+') (FC:'+m[2]+') </span>\n').insertAfter($(this));});
