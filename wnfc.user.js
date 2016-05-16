@@ -5,7 +5,7 @@
 // @description  Display base price, fare class, and points per dollar required
 // @author       Chris Nolan
 // @require      http://code.jquery.com/jquery-latest.js
-// @match        https://www.southwest.com/flight/select-flight.html?fareType=POINTS*
+// @match        https://www.southwest.com/flight/select-flight.html*
 // @updateURL    https://github.com/minamhere/WNFC/raw/master/wnfc.user.js
 // @grant        none
 // ==/UserScript==
