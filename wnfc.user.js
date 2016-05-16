@@ -14,7 +14,7 @@
 
 // Dictionary of fare classes and the known values for PPD. I'd like to highlight or alert somehow if the actual PPD does not match this. 
 // Not used yet.
-var fare_classes = {
+/*var fare_classes = {
     {'T':72},
     {'N':72},
     {'M':72},
@@ -28,6 +28,7 @@ var fare_classes = {
     {'L':80},
     {'YL':100},
     {'K':120}};
+*/
 
     // Each pricing radio button has the full flight pricing information in an HTML class.
     // This will loop through every flight and fare type on the inbound and outbound grids.
